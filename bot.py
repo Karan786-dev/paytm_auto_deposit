@@ -1,7 +1,6 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import requests
-import json
 import random
 import pymongo
 url = "mongodb+srv://demo_maker:demo_maker@cluster0.cnu98.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"

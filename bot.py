@@ -36,6 +36,7 @@ def call_query(call):
     user = call.message.chat.id
     if call.data.startswith('paid_'):
         order_id = call.message.text.split()[1]
+        print(order_id)
         url = f"https://full2sms.in/status_order.php?order_id={order_id}"
         r = requests.get(url)
         status = r.json()['status']

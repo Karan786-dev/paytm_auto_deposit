@@ -38,7 +38,7 @@ def call_query(call):
         order_id = call.message.text.split()[1]
         url = f"https://full2sms.in/status_order.php?order_id={order_id}"
         r = requests.get(url)
-        status = r."status"
+        status = r.status
         if status == "success":
             bot.send_message(user,"Paid Success")
         else:
